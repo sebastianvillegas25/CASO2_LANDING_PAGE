@@ -60,3 +60,26 @@ radioTarjeta.addEventListener('change', () => {
         formWhatsapp.classList.remove('active');
     }
 });
+// Procesar el pago por WhatsApp
+document.getElementById('btn-whatsapp').addEventListener('click', (e) => {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre-whatsapp').value;
+    const telefono = document.getElementById('telefono-whatsapp').value;
+    
+    if (!nombre || !telefono) {
+        alert('Por favor completa todos los campos');
+        return;
+    }
+    
+    // Formatear mensaje para WhatsApp
+    const mensaje = `Hola, soy ${nombre}. Estoy interesado en comprar ${productoTitulo.textContent} por ${productoPrecio.textContent}. Por favor, contáctame para completar mi compra.`;
+    const mensajeCodeado = encodeURIComponent(mensaje);
+    
+    const whatsappURL = `https://wa.me/+51907023588?text=${encodeURIComponent(mensaje)}`;
+    
+    // Abrir WhatsApp en una nueva pestaña
+    window.open(whatsappURL, '_blank');
+    
+    // Cerrar modal después de abrir WhatsApp
+    modalCompra.style.display = 'none';
+});
