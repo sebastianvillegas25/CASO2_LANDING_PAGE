@@ -34,4 +34,29 @@ botonesComprar.forEach(boton => {
 cerrarModalCompra.addEventListener('click', () => {
     modalCompra.style.display = 'none';
 });
+// Cerrar modal al hacer clic fuera del contenido
+window.addEventListener('click', (e) => {
+    if (e.target === modalCompra) {
+        modalCompra.style.display = 'none';
+    }
+});
 
+// Cambiar entre formularios de pago
+const radioWhatsapp = document.getElementById('whatsapp');
+const radioTarjeta = document.getElementById('tarjeta');
+const formWhatsapp = document.getElementById('form-whatsapp');
+const formTarjeta = document.getElementById('form-tarjeta');
+
+radioWhatsapp.addEventListener('change', () => {
+    if (radioWhatsapp.checked) {
+        formWhatsapp.classList.add('active');
+        formTarjeta.classList.remove('active');
+    }
+});
+
+radioTarjeta.addEventListener('change', () => {
+    if (radioTarjeta.checked) {
+        formTarjeta.classList.add('active');
+        formWhatsapp.classList.remove('active');
+    }
+});
