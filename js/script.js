@@ -14,5 +14,24 @@ function configurarModalCompra(producto) {
     }
     // Puedes añadir más productos con diferentes configuraciones aquí
 }
+// Abrir modal de compra cuando se hace clic en "Comprar Ahora"
+botonesComprar.forEach(boton => {
+    boton.addEventListener('click', (e) => {
+        e.preventDefault();
+        const producto = boton.getAttribute('data-producto');
+        configurarModalCompra(producto);
+        modalCompra.style.display = 'flex';
+        
+        // Si venimos del modal de detalles, lo cerramos
+        const modalDetalles = document.getElementById('modal-detalles');
+        if (modalDetalles && modalDetalles.style.display === 'flex') {
+            modalDetalles.style.display = 'none';
+        }
+    });
+});
 
+// Cerrar modal de compra
+cerrarModalCompra.addEventListener('click', () => {
+    modalCompra.style.display = 'none';
+});
 
