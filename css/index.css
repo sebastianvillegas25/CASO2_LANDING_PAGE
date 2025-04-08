@@ -263,3 +263,128 @@ nav ul li a:hover {
     margin-bottom: 15px;
     color: var(--dark-bg);
 }
+/* Estilos para la sección de categorías */
+#categorias {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center; /* Centra las columnas si no se llenan */
+    max-width: 1200px;
+    margin: 0 auto; /* Centra horizontalmente el grid */
+    width: 100%;
+}
+
+.categorias-grid:only-child,
+.categorias-grid > *:only-child {
+    justify-self: center;
+}
+
+
+.categoria-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.categoria-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.categoria-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.categoria-card:hover .categoria-img img {
+    transform: scale(1.05);
+}
+
+.categoria-content {
+    padding: 20px;
+    text-align: center; /* Opcional: centra el texto dentro de cada tarjeta */
+}
+
+.categoria-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.categoria-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.precio {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.categoria-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #e74c3c;
+    color: white;
+    flex: 1;
+}
+
+.btn-secondary {
+    background-color: #3498db;
+    color: white;
+    flex: 1;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+.btn-secondary:hover {
+    background-color: #2980b9;
+}
+
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    .categorias-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .categoria-btns {
+        flex-direction: column;
+    }
+}
