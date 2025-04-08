@@ -1,26 +1,38 @@
- - DulcePerú
-Sobre el Proyecto
-DulcePerú es una plataforma web especializada en la difusión de la repostería tradicional peruana a través de recetas digitales premium. Nuestro objetivo es preservar y compartir el rico patrimonio culinario del Perú, permitiendo que personas de todo el mundo puedan disfrutar de auténticos postres peruanos en la comodidad de su hogar.
-🍮 Características Destacadas
+🍮 DulcePerú
+📝 Sobre el Proyecto
+DulcePerú es una plataforma web especializada en la difusión de la repostería tradicional peruana a través de recetas digitales premium. Nuestro objetivo es preservar y compartir el rico patrimonio culinario del Perú, permitiendo que personas de todo el mundo puedan disfrutar de auténticos postres peruanos desde la comodidad de su hogar.
 
-Recetas Auténticas: Colección curada de postres tradicionales peruanos
-Contenido Premium: Fotografías de alta calidad, instrucciones detalladas y consejos de expertos
-Soporte Personalizado: Asistencia directa por WhatsApp con chefs especializados
-Experiencia de Usuario Optimizada: Navegación intuitiva y diseño responsivo
-Sistema de Pago Seguro: Múltiples opciones adaptadas al mercado local e internacional
+✨ Características Destacadas
+Recetas Auténticas: Colección curada de postres tradicionales peruanos.
+
+Contenido Premium: Fotografías de alta calidad, instrucciones detalladas y consejos de expertos.
+
+Soporte Personalizado: Asistencia directa por WhatsApp con chefs especializados.
+
+Experiencia de Usuario Optimizada: Navegación intuitiva y diseño responsivo.
+
+Sistema de Pago Seguro: Múltiples opciones adaptadas al mercado local e internacional.
 
 🚀 Demo en Vivo
-Visita nuestra página web: [DULCEPERU](https://dulceperupaginadigital.on.drv.tw/DulcePer%C3%BA/#categorias)
-💻 Tecnologías Implementadas
+🔗 Visita nuestra página web:
+👉 [DULCEPERÚ](https://dulceperupaginadigital.on.drv.tw/DulcePer%C3%BA/#categorias)
 
+💻 Tecnologías Implementadas
 HTML5 semántico
+
 CSS3 con diseño responsivo
+
 JavaScript vanilla para interacciones dinámicas
-Integración con Font Awesome para iconografía
+
+Font Awesome para iconografía
+
 PHP para procesamiento de formularios
 
 📁 Estructura de Archivos
-Copiardulceperu/
+pgsql
+Copiar
+Editar
+copiardulceperu/
 ├── index.html
 ├── css/
 │   └── index.css
@@ -29,27 +41,30 @@ Copiardulceperu/
 ├── img/
 ├── enviar_correo.php
 └── README.md
+📌 Abre index.html en tu navegador preferido para comenzar a explorar.
 
-Abre index.html en tu navegador preferido
-
-✨ Funcionalidades Principales
-
+⚙️ Funcionalidades Principales
 Catálogo interactivo de recetas
+
 Modales informativos con detalles de productos
-Preguntas frecuentes expandibles organizadas por categorías
+
+Sección de preguntas frecuentes (FAQs) organizadas por categorías
+
 Sistema de compra con múltiples métodos de pago
+
 Formulario de contacto con validación
 
-👥 Equipo
-Este proyecto fue desarrollado por:
--SEBASTIAN JOEL VILLEGAS SIESQUEN 
--NOEL AYALA CAMARENA
+👥 Equipo de Desarrollo
+Sebastián Joel Villegas Siesquén
+
+Noel Ayala Camarena
 
 📞 Contacto
+📱 WhatsApp: +51 907 023 588
 
-WhatsApp: +51 907 023 588
-Email: info@dulceperu.com
-Redes Sociales: @dulceperu en Facebook, Instagram, Twitter y Pinterest
+📧 Email: info@dulceperu.com
+
+🌐 Redes Sociales: @dulceperu en Facebook, Instagram, Twitter y Pinterest
 
 📄 Licencia
 © 2025 DulcePerú. Todos los derechos reservados.
